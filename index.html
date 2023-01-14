@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Classic TODO list</title>
+
+		<!-- CSS Import -->
+		<link rel="stylesheet" href="main.css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+		<link rel="website icon" type="png" href="vecteezy_business-to-do-list-flat-icon-modern-style_.jpg">
+		<style>body 
+		{
+			background-image: url(Foto1.jpg);
+			background-repeat: no-repeat; 
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: center;
+			
+		}
+		</style>
+	</head>
+
+	<body>
+		<!-- App Wrapper -->
+		<div class="app">
+			<!-- Greeting -->
+			<div class="section greeting">
+				<h2 class="title">
+					What's up, <input type="text" id="name" placeholder="Name here" />
+				</h2>
+			</div>
+			
+			<!-- New Todo -->
+			<div class="section create-todo">
+				<h3>CREATE A TODO</h3>
+				<form id="new-todo-form">
+					<h4>What's on your todo?</h4>
+					<input 
+						type="text" 
+						placeholder="Write here your things that you will do"
+						name="content"
+						id="content" 
+						required/>
+
+					<input type="submit" value="Add todo"/>
+				</form>
+			</div>
+
+			<!-- Todo List -->
+			<div class="section todo-list">
+				<h3>TODO LIST</h3>
+				<div class="list" id="todo-list"></div>
+			</div>
+
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
